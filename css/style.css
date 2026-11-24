@@ -66,3 +66,7 @@ nav a{margin:10px 0}nav .btn.small{margin:10px 0 0}.menu-toggle:checked~nav{disp
 h1,h2,h3{overflow-wrap:break-word}
 @media(max-width:860px){.hero-grid{grid-template-columns:minmax(0,1fr);gap:8px}.hero-logo{max-width:360px}}
 @media(max-width:480px){.hero h1{font-size:1.75rem;hyphens:auto}}
+.review{margin:0;display:flex;flex-direction:column;gap:14px}
+.stars{color:var(--orange);letter-spacing:2px;font-size:1.1rem}.stars .off{color:#3b3545}
+.review blockquote{margin:0;color:var(--text);flex:1}
+.review figcaption{display:flex;flex-direction:column;font-size:.9rem}.review figcaption span{color:var(--muted)}
