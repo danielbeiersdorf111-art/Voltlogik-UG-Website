@@ -91,3 +91,4 @@ h1,h2,h3{overflow-wrap:break-word}
 .faq summary::after{content:"+";color:var(--orange);font-size:1.4rem;line-height:1}
 .faq[open] summary::after{content:"–"}
 .faq p{margin:0 0 18px;color:var(--muted)}
+.photo.person{aspect-ratio:auto;height:auto;max-height:none;object-fit:contain}
