@@ -84,3 +84,10 @@ h1,h2,h3{overflow-wrap:break-word}
 .gal{margin:0;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
 .gal img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 10%}
 .gal figcaption{padding:12px 14px;display:flex;flex-direction:column;font-size:.88rem}.gal figcaption span{color:var(--muted)}
+.narrow{max-width:860px}
+.faq{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:12px;padding:0 22px}
+.faq summary{cursor:pointer;font-weight:600;padding:18px 0;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--orange);font-size:1.4rem;line-height:1}
+.faq[open] summary::after{content:"–"}
+.faq p{margin:0 0 18px;color:var(--muted)}
