@@ -1,0 +1,31 @@
+# Voltlogik UG – Apache-Konfiguration (Hetzner Webhosting)
+
+# Immer HTTPS und ohne "www"
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://voltlogik.de%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} ^www\.voltlogik\.de$ [NC]
+RewriteRule ^ https://voltlogik.de%{REQUEST_URI} [L,R=301]
+
+# Alte WordPress-Adressen ins Leere laufen lassen
+RewriteRule ^(wp-admin|wp-login\.php|xmlrpc\.php|wp-content|wp-includes) - [G,L]
+
+# Keine Verzeichnis-Listings
+Options -Indexes
+
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header always set Content-Security-Policy "default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "DENY"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+  Header unset X-Powered-By
+</IfModule>
+
+# Versteckte Dateien (z. B. .git) sperren
+<FilesMatch "^\.">
+  Require all denied
+</FilesMatch>
+
+ErrorDocument 404 /index.html
