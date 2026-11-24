@@ -6,6 +6,7 @@
 - Wallbox-Installation (11 kW und 22 kW), inklusive Anmeldung bzw. Zustimmung beim Netzbetreiber
 - PV-Anlagen komplett sowie PV-Teilinstallation (AC-Anschluss, wenn die DC-Montage bereits erledigt ist)
 - Speichererweiterung bestehender PV-Anlagen
+- Notstrom-Lösungen: Notstromboxen für dreiphasige PV-Wechselrichter (Vollversorgung bei Stromausfall) und einphasige Notstrom-Umschaltungen für mobile AC-Speicher im Inselbetrieb
 - Elektrischer Anschluss von Wärmepumpen
 - Anmeldung anmeldepflichtiger Geräte und Prüfung nach DIN VDE 0100-600
 - Zählerschrank-Sanierung, neuer Zählerschrank, Unterverteilungen
