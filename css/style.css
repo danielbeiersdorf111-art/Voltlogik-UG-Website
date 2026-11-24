@@ -75,3 +75,7 @@ h1,h2,h3{overflow-wrap:break-word}
 .wa-ic{width:22px;height:22px;flex:none}
 .wa-badge{width:44px;height:44px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;margin-bottom:16px}.wa-badge .wa-ic{width:26px;height:26px}
 .wa-card{border-color:rgba(37,211,102,.45)}
+.photo{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);border:1px solid var(--line)}
+.photo.portrait{aspect-ratio:4/5;max-height:560px;object-position:center 20%}
+.row:nth-child(even) .photo{order:-1}
+@media(max-width:760px){.row:nth-child(even) .photo{order:0}}
