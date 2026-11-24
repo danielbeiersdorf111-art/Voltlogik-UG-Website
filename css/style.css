@@ -79,3 +79,8 @@ h1,h2,h3{overflow-wrap:break-word}
 .photo.portrait{aspect-ratio:4/5;max-height:560px;object-position:center 20%}
 .row:nth-child(even) .photo{order:-1}
 @media(max-width:760px){.row:nth-child(even) .photo{order:0}}
+.photo.tall{aspect-ratio:4/5;max-height:620px}
+.gallery{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr))}
+.gal{margin:0;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.gal img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 10%}
+.gal figcaption{padding:12px 14px;display:flex;flex-direction:column;font-size:.88rem}.gal figcaption span{color:var(--muted)}
